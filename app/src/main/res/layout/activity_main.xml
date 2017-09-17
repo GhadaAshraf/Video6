@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mm.video6.MainActivity">
+     <Button
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="UserName"
+         android:textAllCaps="false"
+         android:id="@+id/btnname"
+         android:background="@android:color/holo_blue_dark"
+         android:layout_marginTop="10dp"
+         android:layout_marginLeft="10dp"
+         />
+
+   <EditText
+       android:layout_below="@+id/btnname"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:inputType="textPersonName"
+       android:ems="15"
+       android:id="@+id/etname"
+
+       />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textAllCaps="false"
+        android:id="@+id/btnpassword"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/etname"
+        />
+
+    <EditText
+        android:layout_below="@+id/btnpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="15"
+        android:id="@+id/etpassword"
+
+
+        />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/etpassword"
+        android:layout_marginTop="55dp"
+      android:onClick="buclick"
+        android:text="Login" />
+</RelativeLayout>
